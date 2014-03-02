@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Near you</title> 
+<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+
+
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.0/jquery.mobile.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.0/jquery.mobile.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div id="page_container" class="clearfix" data-role="page">
+
+	<!-- <div class="side_wrap clearfix"> -->
+		<section id="left_side" class="clearfix">
+
+
+
+			<div class="search_box">
+				<input type="search" id="search" class="search search_input" placeholder="search" />
+			</div>		
+
+			<div class="btn_wrap clearfix">
+				<div class="group_btn">
+					<select id="transport">
+						<option value="DRIVING" selected>Driving</option>
+						<option value="WALKING">Walking</option>
+						<option value="BICYCLING">Bicycle</option>
+						<option value="TRANSIT">Public Transportation</option>
+					</select>							
+				</div>				
+				<div class="group_btn">
+					<input type="button" class="show_all_btn" value="Show all">
+				</div>
+				<div class="group_btn">
+					<input type="button" class="clear_all_btn" value="clear all">
+				</div>
+			</div>
+
+
+			<div class="place_wrap clearfix">
+
+				<div class="place_list clearfix clear">
+
+				</div> <!-- place_list -->
+
+				<div class="place_result_wrap clearfix clear">
+
+				</div>
+
+			</div> <!-- place_wrap -->
+		</section>
+
+
+		<input id="distanceID" type="hidden">
+
+
+
+		<section id="main" class="clearfix">
+			<header>
+				<nav id="navi">
+					<div id="menu_left_btn" class="navi_btn"></div>
+					<div id="home_btn" class="navi_btn">NEAR ME</div>
+					<div id="menu_right_btn" class="navi_btn"></div>
+				</nav>
+			</header>
+
+			<div id="map-canvas" style="width: 100%; height: 100%"></div>
+
+		</section>
+
+
+		<section id="right_side" class="clearfix">
+			<H1 class="fav_title">Favorite Locations</H1>
+			<div class="fav_list"></div>
+		</section>
+
+	<!-- </div> --> <!-- side_wrap -->
+
+</div><!-- page_container -->
+
+<footer id="footer" data-role="footer" >
+	<a class="copyright" href="http://metropolia.fi" target="_blank">@Metropolia - 2013</a>
+</footer>
+
+
+
+</body>
+
+</html>

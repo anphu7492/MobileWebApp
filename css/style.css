@@ -1,0 +1,359 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clear{clear:both;}
+
+.hidden{display: none;}
+
+html{
+	width: 100%;
+ 	height: 100%; 
+ 	min-width: 480px;
+}
+
+body{
+	width: 100%;
+	height: 100% !important; 
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color:#EDEDED;
+}
+
+
+header{
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	padding: 10px 0;
+	background-color: #5FB3BD;
+	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%,rgba(255, 255, 255, 0) 100%);
+
+	color: #FFF;
+	box-shadow: 0 1px 5px 0 #000;
+	z-index: 99;
+}
+	nav {
+		display: block;
+		position: relative;
+		width: 100%;
+		max-width: 1200px;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+		color: #424242;
+	}
+
+	.logo{
+		display: block;
+		position: absolute;
+		width: 100%;
+		font-size: 15px;
+		max-width: 1200px;
+		top: 0;
+		margin: auto;
+		left: 0;
+		right: 0 !important;
+		overflow: hidden;
+	}
+
+	.logo h1{
+		display: inline;
+		font-size: 4em;
+		padding: 0 10px 0 20px;
+		margin: 0 10px;
+		border-right: 3px solid #FFF;
+	}
+
+	.logo span{
+		display: inline;
+		font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	}
+
+
+	#menu_left_btn{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 10px;
+		top: 0;
+		cursor: pointer;
+		background-image: url(../images/menu.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		border-radius: 5px;
+	}
+
+	#home_btn{
+		position: relative;
+		width: 150px;
+		height: 50px;
+		margin: auto;
+		cursor: pointer;
+		border-radius: 5px;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		font-family: "PT+Sans";
+		font-size: 150%;
+		line-height: 2;
+	}
+
+
+	#menu_right_btn{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		right: 10px;
+		top: 0;
+		cursor: pointer;
+		background-image: url(../images/fav.png);
+		background-size: 100%;
+		background-repeat: no-repeat;		
+		border-radius: 5px;
+	}
+
+
+#page_container{
+	display: block;
+	position: relative;
+	width: auto;
+	height: 100%;
+	max-width: 1200px;
+	min-height: 100%;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	text-shadow: 0 0 0;
+}
+
+
+
+#main{
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	min-height: 500px;
+	margin: 0;
+	padding: 0;
+	color: #424242;
+	background-color: #ccc;
+}
+
+	#map-canvas{
+		position: relative;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+
+#left_side{
+	display: none;
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	max-width: 1200px;
+	min-height: 300px;
+	margin: 0;
+	padding: 10px 0;
+	background-color: #333;
+}
+	.ui-input-search{
+		width: 90%;
+		margin: 15px auto;
+	}
+
+	.place_wrap{
+		position: relative;
+		height: 100%;
+		width: 100%;
+		margin: 20px; /* = header height */
+		color: #fff;
+	}
+
+	.add_fav_btn{
+		width: 30px;
+		height: 30px;
+		float: right;
+		background-image: url(../images/add_fav.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		opacity: 0.8;
+	}
+
+	.btn_wrap{
+		width: 100%;
+		position: relative;
+		margin: 10px auto;
+	}
+	.anphabet{
+		display: block;
+		font-size: 120%;
+		font-weight: bold;
+		background: #444444;
+		padding: 5px 10px;
+		border-radius: 10px;
+	}
+	.place_list, .place_result_wrap{
+		position: relative;
+		overflow: auto;
+		height: 80% !important;
+	}
+	.place, .place_result{
+		display: block;
+		position: relative;
+		margin: 5px 20px;
+		background-color: #292929;
+		padding: 10px 30px;
+		cursor: pointer;
+	}
+	.place_name{
+		float: left;
+		display: inline-block;
+		color: #61C0BC;
+		font-size: 110%;
+	}
+	.place_icon {
+		float: right;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-image: url(../images/search.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		opacity: 0.8;
+	}
+	.place_add{
+		font-size: 90%;
+		color: #CACACA;
+		font-style: italic;
+		float: left;
+		clear: both;
+	}
+	.distance{
+		display: block;
+		margin: 5px auto;
+		width: 100px;
+		font-size: 90%;
+		color: #82D17F;
+	}
+
+
+
+#right_side{
+	display: none;
+	position: absolute;
+	width: 90%;
+	right: 0;
+	top: 0;
+	max-width: 1200px;
+	height: 100%;
+	min-height: 300px;
+	margin: 0;
+	padding: 10px 0;
+	background-color: #333;
+	color: #fff;
+}	
+	.fav_title{
+		text-align: center;
+		border-bottom: 2px solid #696969;
+	}
+	.fav_list{
+		height: 100%;
+		padding: 50px;
+	}
+
+	.fav_wrap{
+		display: block;
+		position: relative;
+		margin: 10px 20px;
+		background-color: #292929;
+		padding: 10px 30px;
+		cursor: pointer;
+		border-radius: 10px;
+	}
+	.fav_name{
+		float: left;
+		display: inline-block;
+		color: #ccc;
+		font-size: 110%;
+	}
+	.del_fav_btn{
+		float: right;
+		width: 30px;
+		height: 30px;
+		background-image: url(../images/del.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		opacity: 0.8;
+	}
+
+
+#footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	margin: 0 auto;
+	background-color: #5FB3BD;
+	text-align: center;
+	box-shadow: 0 -1px 5px 0px #000;
+	z-index: 99;
+}
+
+	.copyright{
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+		color: #FFF;
+		padding: 5px;
+		background-color: #1B4B5E;
+		text-decoration: none;
+		z-index: 10;
+	}
+
+	.copyright:hover{
+		text-decoration: underline;
+	}
+
+
+.group_btn{
+	position: relative;
+	width: 30%;
+	margin-left: 3%;
+	float: left;
+}
+
+/* Responsive css*/
+
+
+/* For tablets*/
+@media only screen and (max-width: 959px) and (min-width: 769px), only screen and (max-device-width: 959px) and (max-device-width: 769px) {
+
+}
+
+/* For mobile */
+
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px){
+	#footer{
+		display: none;
+	}
+
+}
